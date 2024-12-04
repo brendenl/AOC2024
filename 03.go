@@ -54,7 +54,7 @@ func dayThreePartTwo(data string) {
 	fmt.Println("total of nums is", total)
 }
 
-func main() {
+func dayThreeMain() {
 	data := dayThreeData()
 	dayThreePartOne(data)
 	dayThreePartTwo(data)

@@ -43,18 +43,15 @@ func dayTwoPartOne(data [][]int) {
 
 func dayTwoPartTwo(data [][]int) {
 	safeReports := 0
-
+	
 	for _, report := range data {
 		isGood := false
-		// fmt.Println("looking at", report)
 		if testReport(report) {
-			// fmt.Println("works first go")
 			isGood = true
 		} else {
 			for i := 0; i < len(report) ; i++ {
 				modReport := slices.Clone(report)
 				modReport = slices.Delete(modReport, i, i + 1)
-				// fmt.Println("testing wtih", i, "gone", modReport)
 				if testReport(modReport) {
 					isGood = true
 					break

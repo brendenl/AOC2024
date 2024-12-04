@@ -93,8 +93,7 @@ func testReport(report []int) (bool) {
 }
 
 func dayTwoMain() {
-	// data := getSmallData()
-	data := getBigData()
+	data := dayTwoData()
 	dayTwoPartOne(data)
   dayTwoPartTwo(data)
 }
